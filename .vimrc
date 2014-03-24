@@ -4,6 +4,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
+"
 Bundle 'gmarick/vundle'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
@@ -21,19 +22,39 @@ set t_ut=
 let g:synastic_c_checkers=['gcc']
 set autoindent
 set cindent
+
+"tab preferences
 set tabstop=4
 set shiftwidth=4
 set noexpandtab
 set softtabstop=4
+
+"make vim look pretty
 colorscheme molokai
 set background=dark
+
+"ctrl + p to use fuzzy finder
 map <C-p> :FufFile<ENTER>
+
+"powerline always visible
 set laststatus=2
+
+"make powerline look not terrible
 let g:Powerline_symbols = 'fancy'
 
 syntax enable
 set number
+
+"mouse use in vim
 set mouse=a
+
+"use jj to go into normal mode 
 imap jj <ESC>
+
+"this shows at least 3 lines above and below the cursor 
+set scrolloff=3
+
+"allows for easy latex building. F2 is mapped so that pressing that will
+"compile the latex document and display it in evince
 command Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!
 map <F2> :Latex<ENTER>
