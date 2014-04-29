@@ -50,6 +50,7 @@ set mouse=a
 
 "use jj to go into normal mode 
 imap jj <ESC>
+imap JJ <ESC>
 
 "this shows at least 3 lines above and below the cursor 
 set scrolloff=3
@@ -57,4 +58,4 @@ set scrolloff=3
 "allows for easy latex building. F2 is mapped so that pressing that will
 "compile the latex document and display it in evince
 command Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!
-map <F2> :Latex<ENTER>
+map <F2>  :w <CR> :Latex <ENTER>
