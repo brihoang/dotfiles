@@ -22,6 +22,8 @@ set t_ut=
 let g:synastic_c_checkers=['gcc']
 set autoindent
 set cindent
+set ignorecase
+set smartcase
 
 "tab preferences
 set tabstop=4
