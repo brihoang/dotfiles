@@ -61,3 +61,6 @@ set scrolloff=3
 "compile the latex document and display it in evince
 command Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!
 map <F2>  :w <CR> :Latex <ENTER>
+
+"spell check
+map <F3> :setlocal spell spelllang=en_us
