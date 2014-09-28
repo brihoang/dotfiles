@@ -64,3 +64,6 @@ map <F2>  :w <CR> :Latex <ENTER>
 
 "spell check
 map <F3> :setlocal spell spelllang=en_us
+
+"ignore files you dont' want to edit with vim
+set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak,*.beam
