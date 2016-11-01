@@ -6,8 +6,6 @@ call vundle#rc()
 
 
 Bundle 'gmark/vundle'
-Bundle 'scrooloose/syntastic'
-Bundle 'terryma/vim-multiple-cursors'
 Bundle 'L9'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'FuzzyFinder'
@@ -34,7 +32,7 @@ set showcmd
 set expandtab
 set background=dark
 colorscheme molokai
-set tabstop=4
+set tabstop=2
 set wildmenu
 set wildmode=list:longest
 set ruler
